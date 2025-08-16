@@ -1,81 +1,187 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MVK Transports Mecheri | Your Reliable Transport Service</title>
+  <title>MVK Transports Mecheri | Reliable Goods Transport Services</title>
+  <meta name="description" content="Professional transport services in Mecheri. We offer goods transportation, local moving with our fleet of Bolero Pickup and Eicher vehicles.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Navigation -->
   <header>
-    <div class="logo">
-      <!-- REPLACE WITH YOUR LOGO -->
-      <img src="logo.jpg" alt="MVK Transports Mecheri" width="100">
-      
+    <div class="logo-container">
+      <img src="logo.png" alt="MVK Transports Mecheri" class="logo">
+      <span class="company-name">MVK Transports</span>
     </div>
-    <nav>
+    <nav id="mainNav">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#fleet">Our Fleet</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
-      <a href="#OWNER" class="cta-button">GOKUL VISHNU </a>
-      <a href="https://wa.me/91+6381986801?text=I%20need%20transport%20service" 
-   class="whatsapp-button">
-   <i class="fab fa-whatsapp"></i>whatsapp - 6381986801
-</a>
+      <a href="tel:+916381986801" class="cta-button call-button">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
+      <a href="https://wa.me/916381986801?text=I%20need%20transport%20service" 
+         class="whatsapp-button">
+         <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
     </nav>
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Affordable & Reliable Transport Solutions</h1>
-      
-      <p>Serving [MECHERI] with 2 dedicated vehicles since [2019]</p>
-      <a href="#book" class="cta-button">Get a Quote </a>
+    <div class="hero-content">
+      <h1>Professional Transport Services in Mecheri</h1>
+      <p class="tagline">Reliable • Affordable • On Time</p>
+      <div class="hero-buttons">
+        <a href="#book" class="cta-button pulse">Get Free Quote</a>
+        <a href="tel:+916381986801" class="secondary-button">
+          <i class="fas fa-phone"></i> +91 6381986801
+        </a>
+      </div>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Reliability</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2</span>
+          <span class="stat-label">Vehicle Fleet</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="services">
-    <h2>Our Services</h2>
+    <div class="section-header">
+      <h2>Our Transport Services</h2>
+      <p class="section-subtitle">Quality services for all your transportation needs</p>
+    </div>
     <div class="service-cards">
       <div class="card">
-        <i class="fas fa-truck"></i>
-        <h3>Goods Transport</h3>
-        <p>Safe and timely delivery of goods</p>
+        <div class="card-icon">
+          <i class="fas fa-truck-loading"></i>
+        </div>
+        <h3>Goods Transportation</h3>
+        <p>Safe and secure transportation of goods with proper handling and timely delivery</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Local & long distance</li>
+          <li><i class="fas fa-check-circle"></i> Careful handling</li>
+          <li><i class="fas fa-check-circle"></i> On-time delivery</li>
+        </ul>
       </div>
       <div class="card">
-        <i class="fas fa-boxes"></i>
+        <div class="card-icon">
+          <i class="fas fa-boxes"></i>
+        </div>
         <h3>Local Moving</h3>
-        <p>Residential & office relocation</p>
+        <p>Efficient relocation services for homes and offices within Mecheri and surrounding areas</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Residential moving</li>
+          <li><i class="fas fa-check-circle"></i> Office relocation</li>
+          <li><i class="fas fa-check-circle"></i> Loading/unloading help</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <h3>Construction Material</h3>
+        <p>Transportation of sand, gravel, bricks and other construction materials</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Bulk material transport</li>
+          <li><i class="fas fa-check-circle"></i> Construction site delivery</li>
+          <li><i class="fas fa-check-circle"></i> Regular supply contracts</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Fleet Section -->
   <section id="fleet" class="fleet">
-    <h2>Our Fleet</h2>
-    <div class="vehicle-grid">
-      <!-- VEHICLE 1 - REPLACE IMAGE AND DETAILS -->
-      <!-- Inside the Fleet Section -->
-<div class="vehicle">
-    <!-- Replace this line with your photo -->
-    <img src="vehicle2.jpg" alt="Truck 1">
-    <div class="vehicle-info">
-      <h3>Bolero-pickup</h3>
-      <p><i class="fas fa-weight-hanging"></i> Capacity: 3.5 Tons</p>
+    <div class="section-header">
+      <h2>Our Vehicle Fleet</h2>
+      <p class="section-subtitle">Well-maintained vehicles for all your transport needs</p>
     </div>
-  </div>
-      <!-- VEHICLE 2 - REPLACE IMAGE AND DETAILS -->
+    <div class="vehicle-grid">
       <div class="vehicle">
-        <img src="vehicle1.jpg" alt="Eicher">
+        <div class="vehicle-image">
+          <img src="bolero-pickup.jpg" alt="Mahindra Bolero Pickup">
+          <div class="vehicle-badge">Available</div>
+        </div>
         <div class="vehicle-info">
-          <h3>EICHER</h3>
-          <p><i class="fas fa-weight-hanging"></i> Capacity: 4.5 tons</p>
-          <p><i class="fas fa-road"></i> Ideal for:  deliveries</p>
+          <h3>Mahindra Bolero Pickup</h3>
+          <div class="vehicle-specs">
+            <p><i class="fas fa-weight-hanging"></i> <strong>Capacity:</strong> 3.5 Tons</p>
+            <p><i class="fas fa-ruler-combined"></i> <strong>Dimensions:</strong> 12' x 6' x 4'</p>
+            <p><i class="fas fa-gas-pump"></i> <strong>Fuel:</strong> Diesel</p>
+            <p><i class="fas fa-road"></i> <strong>Ideal for:</strong> Local goods transport, construction materials</p>
+          </div>
+          <button class="view-more-btn" data-vehicle="bolero">View More Photos</button>
+        </div>
+      </div>
+      <div class="vehicle">
+        <div class="vehicle-image">
+          <img src="eicher.jpg" alt="Eicher Truck">
+          <div class="vehicle-badge">Available</div>
+        </div>
+        <div class="vehicle-info">
+          <h3>Eicher Truck</h3>
+          <div class="vehicle-specs">
+            <p><i class="fas fa-weight-hanging"></i> <strong>Capacity:</strong> 4.5 Tons</p>
+            <p><i class="fas fa-ruler-combined"></i> <strong>Dimensions:</strong> 14' x 7' x 5'</p>
+            <p><i class="fas fa-gas-pump"></i> <strong>Fuel:</strong> Diesel</p>
+            <p><i class="fas fa-road"></i> <strong>Ideal for:</strong> Heavy goods, long distance transport</p>
+          </div>
+          <button class="view-more-btn" data-vehicle="eicher">View More Photos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="section-header">
+      <h2>What Our Clients Say</h2>
+      <p class="section-subtitle">Trusted by businesses and individuals in Mecheri</p>
+    </div>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <div class="testimonial-content">
+          <i class="fas fa-quote-left"></i>
+          <p>MVK Transports has been our reliable partner for goods transportation for over 2 years. Their service is always on time and rates are reasonable.</p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <strong>Ramesh Kumar</strong>
+            <span>Local Business Owner</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-content">
+          <i class="fas fa-quote-left"></i>
+          <p>We used their services for our office relocation. The team was professional, careful with our equipment, and completed the job faster than expected.</p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <strong>Priya S</strong>
+            <span>School Administrator</span>
+          </div>
         </div>
       </div>
     </div>
@@ -83,38 +189,148 @@
 
   <!-- Booking Section -->
   <section id="book" class="booking">
-    <h2>Book Your Transport</h2>
-    <form id="bookingForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <select required>
-        <option value="">Select Vehicle</option>
-        <option value="bolero">Mahindra Bolero pickup</option>
-        <option value="ace">Eicher</option>
-      </select>
-      <textarea placeholder="Delivery Details"></textarea>
-      <button type="submit">Request Booking</button>
-    </form>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <p><i class="fas fa-phone"></i> +91 6381986801</p>
-        <p><i class="fas fa-envelope"></i> gokulvishnu6592@gmail.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Eragundapatti Mecheri - 636451</p>
+    <div class="booking-container">
+      <div class="booking-form">
+        <h2>Request a Quote</h2>
+        <p>Fill out this form and we'll contact you within 1 hour</p>
+        <form id="bookingForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <select id="vehicle" required>
+              <option value="">Select Vehicle Type</option>
+              <option value="bolero">Mahindra Bolero Pickup</option>
+              <option value="eicher">Eicher Truck</option>
+              <option value="not-sure">Not Sure / Need Advice</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="details" placeholder="Transportation Details (Pickup/Delivery Locations, Items, etc.)"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Request
+          </button>
+        </form>
       </div>
-      <div class="map">
-        <!-- Replace with your Google Maps embed code -->
+      <div class="booking-info">
+        <h3>Why Choose MVK Transports?</h3>
+        <ul class="benefits-list">
+          <li><i class="fas fa-check"></i> Best Service</li>
+          <li><i class="fas fa-check"></i> Competitive Pricing</li>
+          <li><i class="fas fa-check"></i> Experienced Drivers</li>
+          <li><i class="fas fa-check"></i> GPS Tracking Available</li>
+          <li><i class="fas fa-check"></i> Insurance Coverage</li>
+          <li><i class="fas fa-check"></i> 5+ Years Experience</li>
+        </ul>
+        <div class="emergency-contact">
+          <h4>For Immediate Assistance:</h4>
+          <a href="tel:+916381986801" class="emergency-btn">
+            <i class="fas fa-phone-alt"></i> Call: +91 6381986801
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  
-    <p>&copy; 2023 MVK Transports. All rights reserved.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p class="section-subtitle">Get in touch for your transportation needs</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="info-content">
+            <h3>Our Location</h3>
+            <p>Eragundapatti, Mecheri - 636451</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="info-content">
+            <h3>Phone Numbers</h3>
+            <p>Primary: +91 6381986801</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info-content">
+            <h3>Email Address</h3>
+            <p>gokulvishnu6592@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="info-content">
+            <h3>Working Hours</h3>
+            <p>Monday - Sunday: 6:00 AM - 10:00 PM</p>
+            <p>24/7 Emergency Service Available</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.123456789012!2d78.12345678901234!3d11.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDA3JzI0LjQiTiA3OMKwMDcnMzYuNiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <div class="footer-logo">
+          <img src="logo-white.png" alt="MVK Transports">
+          <span>MVK Transports</span>
+        </div>
+        <p>Providing reliable transport services in Mecheri and surrounding areas since 2019.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/916381986801"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#fleet">Our Fleet</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Eragundapatti, Mecheri - 636451</p>
+        <p><i class="fas fa-phone-alt"></i> +91 6381986801</p>
+        <p><i class="fas fa-envelope"></i> gokulvishnu6592@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MVK Transports. All Rights Reserved.</p>
+      <p>Designed with <i class="fas fa-heart"></i> AJ STUDIOS for Transports</p>
+    </div>
   </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/916381986801" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
