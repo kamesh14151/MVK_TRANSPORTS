@@ -1022,3 +1022,33 @@ footer {
     right: 20px;
   }
 }
+.alert-box {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  max-width: 90%;
+  text-align: center;
+}
+
+.alert-box.show {
+  opacity: 1;
+}
+
+.alert-box.error {
+  background-color: #e74c3c;
+}
+
+.alert-box.success {
+  background-color: #2ecc71;
+}
+
+.alert-box.info {
+  background-color: #3498db;
+}
