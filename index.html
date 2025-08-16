@@ -52,12 +52,17 @@
     img {
       max-width: 100%;
       height: auto;
+      display: block;
     }
 
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
+    }
+
+    section {
+      padding: 4rem 0;
     }
 
     .section-header {
@@ -106,17 +111,6 @@
       background: var(--accent-color);
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .btn-secondary {
-      background: transparent;
-      border: 2px solid var(--primary-color);
-      color: var(--primary-color);
-    }
-
-    .btn-secondary:hover {
-      background: var(--primary-color);
-      color: var(--white);
     }
 
     /* Header Styles */
@@ -323,7 +317,6 @@
 
     /* Services Section */
     .services {
-      padding: 6rem 0;
       background: var(--white);
     }
 
@@ -342,13 +335,6 @@
       transition: var(--transition);
       text-align: center;
       border-top: 4px solid var(--primary-color);
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    .card.animate {
-      opacity: 1;
-      transform: translateY(0);
     }
 
     .card:hover {
@@ -398,7 +384,6 @@
 
     /* Fleet Section */
     .fleet {
-      padding: 6rem 0;
       background: var(--light-color);
     }
 
@@ -415,13 +400,6 @@
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: var(--transition);
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    .vehicle.animate {
-      opacity: 1;
-      transform: translateY(0);
     }
 
     .vehicle:hover {
@@ -499,7 +477,6 @@
 
     /* Testimonials Section */
     .testimonials {
-      padding: 6rem 0;
       background: var(--white);
     }
 
@@ -516,13 +493,6 @@
       padding: 2rem;
       box-shadow: var(--shadow);
       position: relative;
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    .testimonial.animate {
-      opacity: 1;
-      transform: translateY(0);
     }
 
     .testimonial-content {
@@ -574,7 +544,6 @@
 
     /* Booking Section */
     .booking {
-      padding: 6rem 0;
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: var(--white);
     }
@@ -704,7 +673,6 @@
 
     /* Contact Section */
     .contact {
-      padding: 6rem 0;
       background: var(--light-color);
     }
 
@@ -1486,25 +1454,6 @@
           };
           return vehicles[value] || value;
         }
-
-        // Custom alert function
-        function showAlert(message, type) {
-          const alertBox = document.createElement('div');
-          alertBox.className = `alert-box ${type}`;
-          alertBox.textContent = message;
-          document.body.appendChild(alertBox);
-          
-          setTimeout(() => {
-            alertBox.classList.add('show');
-          }, 10);
-          
-          setTimeout(() => {
-            alertBox.classList.remove('show');
-            setTimeout(() => {
-              document.body.removeChild(alertBox);
-            }, 300);
-          }, 5000);
-        }
       }
 
       // Phone number validation
@@ -1519,7 +1468,6 @@
       document.querySelectorAll('.view-more-btn').forEach(button => {
         button.addEventListener('click', function() {
           const vehicleType = this.getAttribute('data-vehicle');
-          // In a real implementation, this would open a modal or gallery
           const vehicleName = vehicleType === 'bolero' ? 
             'Mahindra Bolero Pickup' : 'Eicher Truck';
           showAlert(`Viewing gallery for ${vehicleName}`, 'info');
@@ -1538,31 +1486,7 @@
         });
       }
 
-      // Animation on scroll
-      function animateOnScroll() {
-        const elements = document.querySelectorAll('.card, .vehicle, .testimonial');
-        const screenPosition = window.innerHeight / 1.2;
-        
-        elements.forEach(element => {
-          const elementPosition = element.getBoundingClientRect().top;
-          
-          if (elementPosition < screenPosition) {
-            element.classList.add('animate');
-          }
-        });
-      }
-
-      // Initialize animations
-      document.querySelectorAll('.card, .vehicle, .testimonial').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease';
-      });
-
-      // Run animations on load and scroll
-      window.addEventListener('load', animateOnScroll);
-      window.addEventListener('scroll', animateOnScroll);
-
+      // Alert function
       function showAlert(message, type) {
         const alertBox = document.createElement('div');
         alertBox.className = `alert-box ${type}`;
